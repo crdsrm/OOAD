@@ -1,0 +1,116 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="org.matt.dheeraj.findapark.AddAParkActivity">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"/>
+
+    <RadioGroup
+        android:id="@+id/location_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/use_device_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use device location"/>
+        <RadioButton
+            android:id="@+id/use_manual_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter location:"/>
+    </RadioGroup>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/address"
+        android:hint="Enter Address"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating (optional):   "/>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_gravity="right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Features (optional)"/>
+
+
+
+    <CheckBox
+        android:id="@+id/has_playground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Playground"/>
+    <CheckBox
+        android:id="@+id/has_shelter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shelter"/>
+    <CheckBox
+        android:id="@+id/has_grill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grill"/>
+    <CheckBox
+        android:id="@+id/has_basketball_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basketball Goal"/>
+    <CheckBox
+        android:id="@+id/has_lake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lake"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="64"
+        android:hint="Your name"
+        android:id="@+id/user_name"/>
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter comments here"/>
+    <Button
+        android:id="@+id/save_park"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="savePark"
+        android:text="Submit Park"/>
+</LinearLayout>
+</ScrollView>

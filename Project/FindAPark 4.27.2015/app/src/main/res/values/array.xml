@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="park_features">
+        <item>Playground</item>
+        <item>Shelter</item>
+        <item>Basketball Goal</item>
+        <item>Skate Park</item>
+    </string-array>
+    <string-array name="sort_choices">
+        <item>Distance</item>
+        <item>Rating</item>
+    </string-array>
+</resources>
